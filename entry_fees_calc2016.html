@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Canoe Slalom Fees Calculator</title>
+  <meta name="description" content="Slalom Entry Fees Calculator">
+  <meta name="author" content="Mikey Reynolds mikey<at>mikeyreynolds<dot>com">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <if lt IE 9>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <endif>
+  <style>
+body {
+	padding:1em;
+	font-family:Georgia;
+	font-size:1em;
+}
+
+form{
+	padding:1em;
+	width:800px;
+}
+
+label {
+	display:inline-block;
+	width:250px;
+	text-align:right;
+}
+
+input {
+	display:inline-block;
+	width:35px;
+	margin:0 1em;
+	padding:2px 3px;
+	border-radius:3px;
+	border:1px solid #ccc;
+	font-size:1em;
+}
+
+legend {
+	font-weight:bold;
+}
+.containter{
+    width: 800px;
+  }
+  .containter div{
+    width: 400px;
+    float: left;
+  }
+
+p:last-of-type {
+	margin-left:67px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+strong {
+	margin-left:0.9em;
+}
+
+  </style>
+</head>
+
+<body>
+	<legend>2016 Canoe Slalom Fees Calculator</legend>
+This calculator is for standard/late fees only and does not cover  enhanced entry fees. </p>Ensure all boxes have a number in or the calculator will produce an error. 
+  <A HREF="javascript:history.go(0)">Reset the calculator</A>
+  <form onsubmit="return false" oninput="Total.value = (prem1s.valueAsNumber * 19.25)+(prem1d.valueAsNumber * 31.00)+(prem1sl.valueAsNumber * 24.25)+(prem1dl.valueAsNumber * 41.00)+(div2s.valueAsNumber * 10.50)+(div3s.valueAsNumber * 8.00)+(div4s.valueAsNumber * 5.00)+(div2d.valueAsNumber * 17.00)+(div3d.valueAsNumber * 13.00)+(div4d.valueAsNumber * 8.00)+(div2sl.valueAsNumber * 15.50)+(div3sl.valueAsNumber * 9.25)+(div4sl.valueAsNumber * 5.00)+(div2dl.valueAsNumber * 27.00)+(div3dl.valueAsNumber * 15.50)+(div4dl.valueAsNumber * 8.00)-(mcd1.valueAsNumber * 3)">
+<!------------------------------------------------------------------------>
+<div class="containter">
+    <div>
+<legend>Single Event Standard Fee</legend>
+<p><label for="prem1s">Premier/Division One £19.25</label>
+  <input type="number" min="0" id="prem1s" name="prem1s" value="0" size="20"></p>
+
+<p><label for="div2Js">Division Two £10.50</label>
+  <input type="number" min="0" id="div2s" name="div2s" value="0" size="20"></p>
+
+<p><label for="div3Js">Division Three £8.00</label>
+  <input type="number" min="0" id="div3s" name="div3s" value="0" size="20"></p>
+
+<p><label for="div4Js">Division Four £5.00</label>
+  <input type="number" min="0" id="div4s" name="div4s" value="0" size="20"></p>
+  <p></p>
+
+</div>
+<!------------------------------------------------------------------------>
+
+<div>
+<legend>Single Event Late Fee</legend>
+<p><label for="prem1sl">Premier/Division One £24.25</label>
+  <input type="number" min="0" id="prem1sl" name="prem1sl" value="0" size="20"></p>
+
+<p><label for="div2Jsl">Division Two £15.50</label>
+  <input type="number" min="0" id="div2sl" name="div2sl" value="0" size="20"></p>
+
+<p><label for="div3Jsl">Division Three £9.25</label>
+  <input type="number" min="0" id="div3sl" name="div3sl" value="0" size="20"></p>
+
+<p><label for="div4Jsl">Division Four £5.00</label>
+  <input type="number" min="0" id="div4sl" name="div4sl" value="0" size="20"></p>
+  <p></p>
+  </div>
+<!------------------------------------------------------------------------>
+<div>
+<legend>Double Event Standard Fee</legend>
+<p><label for="prem1d">Premier/Division One £31.00</label>
+  <input type="number" min="0" id="prem1d" name="prem1d" value="0" size="20"></p>
+
+<p><label for="div2Jd">Division Two £17.00</label>
+  <input type="number" min="0" id="div2d" name="div2d" value="0" size="20"></p>
+
+<p><label for="div3Jd">Division Three £13.00</label>
+  <input type="number" min="0" id="div3d" name="div3d" value="0" size="20"></p>
+
+<p><label for="div4Jd">Division Four £8.00</label>
+  <input type="number" min="0" id="div4d" name="div4d" value="0" size="20"></p>
+  <p></p>
+
+</div>
+<!------------------------------------------------------------------------>
+<div>
+<legend>Double Event Late Fee</legend>
+<p><label for="prem1dl">Premier/Division One £41.00</label>
+  <input type="number" min="0" id="prem1dl" name="prem1dl" value="0" size="20"></p>
+
+<p><label for="div2Jdl">Division Two £27.00</label>
+  <input type="number" min="0" id="div2dl" name="div2dl" value="0" size="20"></p>
+
+<p><label for="div3Jdl">Division Three £15.50</label>
+  <input type="number" min="0" id="div3dl" name="div3dl" value="0" size="20"></p>
+
+<p><label for="div4Jdl">Division Four £8.00</label>
+  <input type="number" min="0" id="div4dl" name="div4dl" value="0" size="20"></p>
+  <p></p>
+  </div>
+</div>
+<!------------------------------------------------------------------------>
+<div>
+
+ 	<legend>Total</legend>
+<p><label for="mcd1">Multiclass Discount</label>
+  <input type="number" min="0" id="mcd1" name="mcd1" value="0" size="20"></p>
+<p>Total: <strong>£<output name="Total" for="prem1s + prem1d + prem1sl + prem1dl + div2s + div3s + div4s + div2d + div3d + div4d + div2sl + div3sl + div4sl + div2dl + div3dl + div4dl + mcd1">0</output></strong></p>
+<legend>Late Fee</legend>
+Is payable on entries accepted by the Organiser which is received less than 15 days before the event. In the case of a double event, the late fee shown applies where entries for both events are received late. Only one extra charge is payable where one entry is on time and the other late
+<legend>Multiclass Discount</legend>
+At Division 2 and below a discount of £3 will be offered for second and subsequent individual entries at an event by the same Competitor. A single discount may be earned or claimed for each boat. (Only 1 Competitor of a C2 Crew can claim discount for their individual event).
+At double events, you deduct a discount of £3.00 in the same way, from the second and subsequent standard entry fees.</P>
+</div>
+</form>
+
+</body>
+</html>
